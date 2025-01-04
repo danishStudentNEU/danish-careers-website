@@ -10,13 +10,24 @@
   <title>Danish Careers</title>
 </head>
 <body>
-  <div id="container">
-    <h1 class="text-center mt-2 mb-4"">{{company_name}} Careers</h1>
-    <img src="https://85b8a667-ffcd-4115-b33e-1f1b85572127-00-1oy80akcrrqn2.janeway.replit.dev/static/Banner.jpg" height="320" id="banner" class="img-fluid">
-    <h2 class="text-center mt-2 mb-4"">About Danish</h2>
-    <p class="bodytext">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+  {% include 'nav.html' %}
+  <div id="container" class="container">
+    <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
+    <img src="/static/Banner.jpg" height="320" id="banner" class="img-fluid">
+    <h2 class="text-center mt-2 mb-4">About Danish</h2>
+    <div class="row">
+        <!-- Column for text -->
+        <div class="col-md-8">
+            <p class="bodytext">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <!-- Column for image -->
+        <div class="col-md-4">
+            <img src="/static/annie-spratt-QckxruozjRg-unsplash (1).jpg" style="height:320px;" class="img-fluid">
+        </div>
+      </div>
+    </div>
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     <p>
         <div class="container">
@@ -49,5 +60,6 @@
       
     </div>
   </div>
+  {% include 'footer.html' %}
 </body>
 </html>
